@@ -48,30 +48,31 @@ export default function Portfolio() {
         <h2 className="text-2xl font-semibold mb-2">Projects</h2>
         <div className="grid md:grid-cols-2 gap-4">
           {projects.map((proj, idx) => (
-            <div key={idx} className="rounded-2xl shadow p-4">
-              <div>
-                <h3 className="text-xl font-bold mb-1">{proj.title}</h3>
-                <p className="text-sm text-gray-600 mb-2">{proj.description}</p>
-                <div className="flex flex-wrap gap-2 mb-2">
-                  {proj.tech.map((t, i) => (
-                    <span
-                      key={i}
-                      className="bg-blue-100 text-blue-800 px-2 py-0.5 rounded text-xs"
-                    >
-                      {t}
-                    </span>
-                  ))}
-                </div>
-                {proj.github && (
-                  <a
-                    href={proj.github}
-                    target="_blank"
-                    className="text-sm text-blue-500"
+            <div
+              key={idx}
+              className="rounded-2xl shadow p-4 bg-white dark:bg-gray-800"
+            >
+              <h3 className="text-xl font-bold mb-1">{proj.title}</h3>
+              <p className="text-sm text-gray-600 mb-2">{proj.description}</p>
+              <div className="flex flex-wrap gap-2 mb-2">
+                {proj.tech.map((t, i) => (
+                  <span
+                    key={i}
+                    className="bg-blue-100 text-blue-800 px-2 py-0.5 rounded text-xs"
                   >
-                    View Source
-                  </a>
-                )}
+                    {t}
+                  </span>
+                ))}
               </div>
+              {proj.github && (
+                <a
+                  href={proj.github}
+                  target="_blank"
+                  className="text-sm text-blue-500"
+                >
+                  View Source
+                </a>
+              )}
             </div>
           ))}
         </div>
@@ -102,8 +103,11 @@ export default function Portfolio() {
 
       <section>
         <h2 className="text-2xl font-semibold mb-2">Resume</h2>
-
-        <a href="/DURAIRESUME_UPDATED.pdf" target="_blank">
+        <a
+          href="/DURAIRESUME_UPDATED.pdf"
+          target="_blank"
+          className="inline-block bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition"
+        >
           Download PDF Resume
         </a>
       </section>
@@ -111,13 +115,24 @@ export default function Portfolio() {
       <section>
         <h2 className="text-2xl font-semibold mb-2">Contact</h2>
         <div className="flex gap-4 items-center">
-          <a href="mailto:duraibytes@gmail.com">
+          <a
+            href="mailto:duraibytes@gmail.com"
+            className="flex items-center gap-1"
+          >
             <Mail className="w-5 h-5" /> duraibytes@gmail.com
           </a>
-          <a href="https://github.com/duraibyes" target="_blank">
+          <a
+            href="https://github.com/duraibyes"
+            target="_blank"
+            className="flex items-center gap-1"
+          >
             <Github className="w-5 h-5" /> GitHub
           </a>
-          <a href="https://www.linkedin.com/in/duraibytes" target="_blank">
+          <a
+            href="https://www.linkedin.com/in/duraibytes"
+            target="_blank"
+            className="flex items-center gap-1"
+          >
             <Linkedin className="w-5 h-5" /> LinkedIn
           </a>
         </div>
