@@ -1,7 +1,6 @@
 import ProfileImg from "../../public/profile.png";
 import { CheckCircleIcon } from "@heroicons/react/24/solid";
 import PrimaryButton from "./button/PrimaryButton";
-import SecondaryButton from "./button/SecondaryButton";
 import { TypeAnimation } from "react-type-animation";
 
 const Hero = () => {
