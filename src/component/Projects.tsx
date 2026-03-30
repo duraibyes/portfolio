@@ -1,122 +1,151 @@
 import { motion } from "framer-motion";
-
+import PrimaryButton from "./button/PrimaryButton";
+import SecondaryButton from "./button/SecondaryButton";
+import OutlineWhiteButton from "./button/OutlineWhiteButton";
 
 const projects = [
     {
-        title: "Dynamic Rate Card Management",
+        title: "Profin Solutions",
         description:
-            "Built a full-stack application using Laravel and React for managing product pricing, cart system, and PDF generation.",
-        tech: ["Laravel", "React", "TypeScript", "MySQL"],
-        github: "#",
-        live: "#",
+            "Created a responsive and interactive web application using React and MUI, focusing on modern UI design and smooth user interaction.",
+        tech: ["React", "TypeScript", "MUI"],
+        url: "https://profinsolutionsreact.vercel.app/",
+        git_link: "https://github.com/duraibyes/profinsolutionsreact",
+        feature: "Responsive UI"
     },
     {
-        title: "Music Schedule System",
+        title: "Ozone Decors",
         description:
-            "Developed a scheduling system handling seasonal and event-based playlists with AWS SQS integration.",
-        tech: ["Node.js", "TypeScript", "AWS", "SQS"],
-        github: "#",
-        live: "#",
+            "Designed Responsive ui for interior and exterior design in html and bootstrap",
+        tech: ["HTML", "Bootstrap"],
+        url: "https://ozdecors.vercel.app/",
+        git_link: "",
+        feature: "Responsive UI"
     },
     {
-        title: "Portfolio Website",
+        title: "GRT Farms",
         description:
-            "Designed and developed a responsive portfolio using React, Tailwind, and animations with Framer Motion.",
-        tech: ["React", "Tailwind", "Framer Motion"],
-        github: "#",
-        live: "#",
+            "Designed Responsive ui for Farm harvest design in html and bootstrap",
+        tech: ["HTML", "Bootstrap"],
+        url: "https://grtfarm.vercel.app/",
+        git_link: "",
+        feature: "Responsive UI"
     },
+    {
+        title: "Pidariamman",
+        description:
+            "Designed Responsive ui for Pidariamman temple site in html and bootstrap",
+        tech: ["HTML", "Bootstrap"],
+        url: " https://pidariamman.vercel.app/",
+        git_link: "",
+        feature: "Responsive UI"
+    },
+    {
+        title: "Shero Sparks",
+        description:
+            "Designed Responsive ui for Shero sparks in html and bootstrap",
+        tech: ["React", "Bootstrap"],
+        url: "https://sherosparks.vercel.app/",
+        git_link: "",
+        feature: "Responsive UI"
+    },
+    {
+        title: "Tiger Automobiles",
+        description:
+            "Designed a responsive enquiry platform for electric vehicles and rickshaws, enabling users to explore products and submit enquiries with a clean and accessible interface.",
+        tech: ["React", "Bootstrap"],
+        url: "https://tigerautomobiles.vercel.app/",
+        git_link: "",
+        feature: "Responsive UI"
+    },
+
 ];
 
 const Projects = () => {
     return (
-        <section className="py-16 bg-white">
-            <div className="container mx-auto px-4 sm:px-6 lg:px-12">
+        <section className="py-20  bg-gradient-to-br from-[#1E3A8A] via-[#2563EB] to-[#1E40AF] ">
+            <div className="container mx-auto px-6 lg:px-16">
 
-                {/* Title */}
-                <div className="text-center mb-12">
-                    <h2 className="text-3xl md:text-4xl font-bold text-[#0F172A]">
-                        My Projects
-                    </h2>
-                    <p className="text-[#475569] mt-2">
-                        Some of my recent work
+                {/* TITLE */}
+                <div className="text-center mb-16 text-white">
+                    <h2 className="text-4xl font-bold">My Projects</h2>
+                    <p className="text-blue-100 mt-2">
+                        Crafted with precision & passion
                     </p>
                 </div>
 
-                {/* Grid */}
+                {/* GRID */}
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
 
                     {projects.map((project, index) => (
                         <motion.div
                             key={index}
-                            initial={{ opacity: 0, y: 50 }}
+                            initial={{ opacity: 0, y: 40 }}
                             whileInView={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 0.6, delay: index * 0.1 }}
+                            transition={{ duration: 0.5, delay: index * 0.1 }}
                             viewport={{ once: true }}
-                            className="group relative rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-500"
+                            className="bg-white rounded-3xl p-6 shadow-lg hover:shadow-xl transition duration-500 border border-blue-100 flex flex-col justify-between h-full"
                         >
 
-                            {/* Project Image */}
-                            <div className="relative h-[220px] overflow-hidden">
-                                <img
-                                    src="/project1.png"
-                                    alt=""
-                                    className="w-full h-full object-cover group-hover:scale-110 transition duration-500"
-                                />
+                            {/* HEADER */}
+                            <div className="flex items-center gap-4 mb-4">
+                                <div className="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 font-bold">
+                                    🚀
+                                </div>
 
-                                {/* Overlay */}
-                                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent opacity-0 group-hover:opacity-100 transition duration-500" />
-
-                                {/* Buttons on Hover */}
-                                <div className="absolute bottom-4 left-4 right-4 flex gap-3 opacity-0 group-hover:opacity-100 transition duration-500">
-                                    <a
-                                        href={project.live}
-                                        className="bg-[#FACC15] text-[#1E293B] px-4 py-2 text-sm rounded-md font-semibold"
-                                    >
-                                        Live
-                                    </a>
-                                    <a
-                                        href={project.github}
-                                        className="bg-white text-[#1E293B] px-4 py-2 text-sm rounded-md font-semibold"
-                                    >
-                                        GitHub
-                                    </a>
+                                <div>
+                                    <h3 className="text-lg font-semibold text-[#0F172A]">
+                                        {project.title}
+                                    </h3>
+                                    <p className="text-sm text-gray-500">
+                                        Personal Project
+                                    </p>
                                 </div>
                             </div>
 
-                            {/* Content */}
-                            <div className="p-5 bg-white">
+                            {/* BADGES */}
+                            <div className="flex gap-2 mb-4 flex-wrap">
+                                <span className="px-3 py-1 text-xs bg-blue-100 text-blue-700 rounded-full">
+                                    {project.feature}
+                                </span>
 
-                                {/* Title */}
-                                <h3 className="text-lg font-semibold text-[#0F172A] group-hover:text-blue-600 transition">
-                                    {project.title}
-                                </h3>
+                            </div>
 
-                                {/* Description */}
-                                <p className="text-[#475569] mt-2 text-sm leading-relaxed">
+                            {/* DESCRIPTION BOX */}
+                            <div className="bg-blue-50 rounded-2xl p-4 mb-4">
+
+                                <p className="text-sm text-gray-700 mb-3">
                                     {project.description}
                                 </p>
 
-                                {/* Tech Stack */}
-                                <div className="flex flex-wrap gap-2 mt-4">
+                                <div className="flex flex-wrap gap-2">
                                     {project.tech.map((tech, i) => (
                                         <span
                                             key={i}
-                                            className="text-xs bg-blue-50 text-blue-600 px-2 py-1 rounded-md"
+                                            className="px-2 py-1 text-xs bg-white rounded-full shadow-sm"
                                         >
                                             {tech}
                                         </span>
                                     ))}
                                 </div>
-
                             </div>
+
+                            {/* FOOTER */}
+                            <div className="flex flex-col sm:flex-row gap-3 mt-auto">
+                                <PrimaryButton label="Live Demo" url={project.url} />
+                                <SecondaryButton label="Github Link" url={project.git_link} />
+                            </div>
+
                         </motion.div>
                     ))}
 
                 </div>
+                <div className="my-6 flex items-center justify-center">
+                    <PrimaryButton label="More Projects" url="https://github.com/duraibyes" />
+                </div>
             </div>
         </section>
     );
-}
+};
 
-export default Projects
+export default Projects;

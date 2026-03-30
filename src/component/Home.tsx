@@ -1,4 +1,5 @@
 import AnimationHero from "./AnimationHero";
+import ContactSection from "./ContactSection";
 import Navbar from "./layout/Navbar";
 import Projects from "./Projects";
 import Skills from "./Skills";
@@ -10,6 +11,7 @@ const Home = () => {
             <AnimationHero />
             <Skills />
             <Projects />
+            <ContactSection />
         </div>
     );
 }

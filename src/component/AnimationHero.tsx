@@ -1,12 +1,16 @@
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
 import ProfileImg from "../../public/profile.png";
+import PrimaryButton from "./button/PrimaryButton";
+import OutlineWhiteButton from "./button/OutlineWhiteButton";
 
 export default function AnimationHero() {
     return (
         <section className="bg-gradient-to-br from-[#1E3A8A] via-[#2563EB] to-[#1E40AF] min-h-screen flex items-center">
+            {/* <section className="bg-gradient-to-r from-purple-500 via-blue-500 to-cyan-400  min-h-screen flex items-center"> */}
 
-            <div className="container mx-auto px-4 sm:px-6 lg:px-12 flex flex-col md:flex-row items-center justify-between">
+
+            <div className="container mx-auto px-4 sm:px-6 lg:px-16 flex flex-col md:flex-row items-center justify-between">
 
                 {/* LEFT CONTENT */}
                 <motion.div
@@ -55,13 +59,9 @@ export default function AnimationHero() {
 
                     {/* Buttons */}
                     <div className="flex gap-4 justify-center md:justify-start">
-                        <button className="bg-[#FACC15] hover:bg-[#EAB308] text-[#1E293B] px-6 py-3 rounded-lg font-semibold shadow-md hover:shadow-lg transition">
-                            Hire Me
-                        </button>
+                        <PrimaryButton label="Hire me" />
 
-                        <button className="border border-white text-white hover:bg-white hover:text-[#1E3A8A] px-6 py-3 rounded-lg transition">
-                            View Projects
-                        </button>
+                        <OutlineWhiteButton label="View Projects" url="https://github.com/duraibyes" />
                     </div>
                 </motion.div>
 
@@ -87,7 +87,7 @@ export default function AnimationHero() {
                             className="absolute top-0 left-1/2 -translate-x-1/2 
                             w-[40px] h-[40px] 
                             sm:w-[50px] sm:h-[50px] 
-                            md:w-[70px] md:h-[70px]  
+                            md:w-[60px] md:h-[60px]  
                             bg-white p-3 rounded-xl shadow-md"
                         >
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg" className="w-full h-full " />
@@ -95,7 +95,8 @@ export default function AnimationHero() {
                         <motion.div
                             animate={{ y: [0, -10, 0] }}
                             transition={{ repeat: Infinity, duration: 3 }}
-                            className="absolute top-[10%] left-0 w-[40px] h-[40px]  bg-white p-3 rounded-xl shadow-md"
+                            className="absolute top-[10%] left-0 w-[40px] h-[40px] sm:w-[50px] sm:h-[50px] 
+                            md:w-[60px] md:h-[60px]  bg-white p-3 rounded-xl shadow-md"
                         >
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg" className="w-full h-full " />
                         </motion.div>
@@ -103,7 +104,8 @@ export default function AnimationHero() {
                         <motion.div
                             animate={{ y: [0, 10, 0] }}
                             transition={{ repeat: Infinity, duration: 3 }}
-                            className="absolute top-[10%] right-0  w-[40px] h-[40px]  sm:w-[50px] sm:h-[50px]  bg-white p-3 rounded-xl shadow-md"
+                            className="absolute top-[10%] right-0  w-[40px] h-[40px]  sm:w-[50px] sm:h-[50px] 
+                            md:w-[60px] md:h-[60px]   bg-white p-3 rounded-xl shadow-md"
                         >
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" className="w-full h-full " />
                         </motion.div>
@@ -111,7 +113,7 @@ export default function AnimationHero() {
                         <motion.div
                             animate={{ y: [0, -10, 0] }}
                             transition={{ repeat: Infinity, duration: 3 }}
-                            className="absolute bottom-[10%] right-[10%]  w-[40px] h-[40px]  md:w-[70px] md:h-[70px] bg-white p-3 rounded-xl shadow-md"
+                            className="absolute bottom-[10%] right-[10%]  w-[40px] h-[40px]  md:w-[60px] md:h-[60px] bg-white p-3 rounded-xl shadow-md"
                         >
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" className="w-full h-full " />
                         </motion.div>
@@ -120,7 +122,7 @@ export default function AnimationHero() {
                             transition={{ repeat: Infinity, duration: 3 }}
                             className="absolute bottom-[5%] left-[5%] w-[40px] h-[40px] 
                             sm:w-[50px] sm:h-[50px] 
-                            md:w-[70px] md:h-[70px] bg-white p-3 rounded-xl shadow-md"
+                            md:w-[60px] md:h-[60px] bg-white p-3 rounded-xl shadow-md"
                         >
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" className="w-full h-full " />
                         </motion.div>
@@ -129,7 +131,7 @@ export default function AnimationHero() {
                             transition={{ repeat: Infinity, duration: 3 }}
                             className="absolute bottom-[40%] left-[-10%] w-[40px] h-[40px] 
                             sm:w-[50px] sm:h-[50px] 
-                            md:w-[70px] md:h-[70px] bg-white p-3 rounded-xl shadow-md"
+                            md:w-[60px] md:h-[60px] bg-white p-3 rounded-xl shadow-md"
                         >
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" className="w-full h-full " />
                         </motion.div>

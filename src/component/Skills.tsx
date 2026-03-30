@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 
 const skills = [
-    { name: "Laravel / PHP", level: 90 },        // 🔥 Core strength
+    { name: "Laravel / PHP", level: 95 },        // 🔥 Core strength
     { name: "React / TypeScript", level: 85 },   // Strong
     { name: "JavaScript", level: 85 },           // Strong base
     { name: "REST API Development", level: 88 }, // Important (you missed this!)
@@ -20,7 +20,7 @@ const skills = [
 const Skills = () => {
     return (
         <section className="py-16 bg-[#EFF6FF]">
-            <div className="container mx-auto px-4 sm:px-6 lg:px-12">
+            <div className="container mx-auto px-4 sm:px-6 lg:px-16">
 
                 {/* Title */}
                 <div className="text-center mb-12">

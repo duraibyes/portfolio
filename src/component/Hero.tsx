@@ -5,9 +5,9 @@ import { TypeAnimation } from "react-type-animation";
 
 const Hero = () => {
     return (
-        <section className="static-hero bg-gradient-to-br from-[#1E3A8A] via-[#2563EB] to-[#1E40AF] relative z-40 md:py-16 py-16 lg:py-16 sm:py-4 flex">
+        <section className="static-hero bg-gradient-to-br from-[#1E3A8A] via-[#2563EB] to-[#1E40AF] relative z-40 md:py-16 py-10 lg:py-16 sm:py-4 flex">
 
-            <div className="container gap-6 mx-auto px-4 sm:px-6 lg:px-14 md:px-10 md:py-16 py-12 sm:py-8 lg:py-16 flex flex-col md:flex-row items-center justify-between">
+            <div className="container gap-6 mx-auto px-4 sm:px-6 lg:px-14 md:px-10 md:py-16 py-14 sm:py-8 lg:py-16 flex flex-col md:flex-row items-center justify-between">
 
                 {/* LEFT SIDE (TEXT) */}
                 <div className="w-full md:w-1/2 text-center md:text-left">
