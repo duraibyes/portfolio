@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
 import PrimaryButton from "./button/PrimaryButton";
 import SecondaryButton from "./button/SecondaryButton";
-import OutlineWhiteButton from "./button/OutlineWhiteButton";
 
 const projects = [
     {
