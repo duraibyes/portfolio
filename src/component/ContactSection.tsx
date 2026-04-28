@@ -56,7 +56,7 @@ const ContactSection = () => {
     };
 
     return (
-        <section className="py-20 px-6 bg-gradient-to-br from-[#78829c] to-[#2065d4] text-white">
+        <section className="py-20 px-6 bg-gradient-to-br from-[#78829c] to-[#2065d4] text-white" id="contact">
             <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center">
 
                 {/* Left Side */}
@@ -71,10 +71,10 @@ const ContactSection = () => {
 
                     <div className="space-y-4">
                         <a
-                            href="mailto:yourmail@example.com"
+                            href="mailto:duraibytes@gmail.com"
                             className="flex items-center gap-3 hover:text-yellow-400 transition"
                         >
-                            <Mail size={20} /> yourmail@example.com
+                            <Mail size={20} /> duraibytes@gmail.com
                         </a>
 
                         <a

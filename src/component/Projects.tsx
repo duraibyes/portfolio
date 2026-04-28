@@ -4,6 +4,24 @@ import SecondaryButton from "./button/SecondaryButton";
 
 const projects = [
     {
+        title: "PoSolutions",
+        description:
+            "Created a responsive and interactive web application using React and Tailwind CSS, focusing on modern UI design and smooth user interaction.",
+        tech: ["React", "TypeScript", "Tailwind CSS"],
+        url: "https://posolutions-omega.vercel.app/",
+        git_link: "https://github.com/duraibyes/posolutions",
+        feature: "Responsive UI"
+    },
+    {
+        title: "CyberVenture",
+        description:
+            "Created a responsive and interactive web application using React and Tailwind CSS, focusing on modern UI design and smooth user interaction.",
+        tech: ["React", "TypeScript", "Tailwind CSS"],
+        url: "https://cyberventure-ui.vercel.app/",
+        git_link: "https://github.com/duraibyes/cyberventure-ui",
+        feature: "Responsive UI"
+    },
+    {
         title: "Profin Solutions",
         description:
             "Created a responsive and interactive web application using React and MUI, focusing on modern UI design and smooth user interaction.",
@@ -62,7 +80,7 @@ const projects = [
 
 const Projects = () => {
     return (
-        <section className="py-20  bg-gradient-to-br from-[#1E3A8A] via-[#2563EB] to-[#1E40AF] ">
+        <section id="projects" className="py-20  bg-gradient-to-br from-[#1E3A8A] via-[#2563EB] to-[#1E40AF] ">
             <div className="container mx-auto px-6 lg:px-16">
 
                 {/* TITLE */}

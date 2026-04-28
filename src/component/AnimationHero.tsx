@@ -6,7 +6,7 @@ import OutlineWhiteButton from "./button/OutlineWhiteButton";
 
 export default function AnimationHero() {
     return (
-        <section className="bg-gradient-to-br from-[#1E3A8A] via-[#2563EB] to-[#1E40AF] min-h-screen flex items-center">
+        <section id="home" className="bg-gradient-to-br from-[#1E3A8A] via-[#2563EB] to-[#1E40AF] min-h-screen flex items-center">
             {/* <section className="bg-gradient-to-r from-purple-500 via-blue-500 to-cyan-400  min-h-screen flex items-center"> */}
 
 
